@@ -142,14 +142,15 @@ p {
     text-decoration: none;
 }
 
+.logo__accent {
+    color: var(--accent-color);
+}
+
 .main-nav__logo {
     margin-right: 93px;
     color: #000000;
 }
 
-.main-nav__logo-accent {
-    color: var(--accent-color);
-}
 
 
 .main-nav__list {
