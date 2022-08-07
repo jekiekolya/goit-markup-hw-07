@@ -115,14 +115,14 @@ p {
 }
 
 /* HEADER */
-header {
+.page-header {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     border-bottom: 1px solid #ECECEC;
 }
 
-header .container {
+.container--center {
     display: flex;
     align-items: center;
 }
@@ -133,34 +133,35 @@ header .container {
 }
 
 /* logo */
-nav .logo {
-    margin-right: 93px;
-
-    text-decoration: none;
-    color: #000000;
-}
-
-.logo span {
-    color: var(--accent-color);
-}
 
 .logo {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
+    text-decoration: none;
 }
 
-.site-nav {
+.main-nav__logo {
+    margin-right: 93px;
+    color: #000000;
+}
+
+.main-nav__logo-accent {
+    color: var(--accent-color);
+}
+
+
+.main-nav__list {
     display: flex;
 }
 
-.site-nav li:not(:last-child) {
+.main-nav__item:not(:last-child) {
     margin-right: 50px;
 }
 
 /* links for pages */
-nav .link {
+.main-nav__link {
     position: relative;
 
     display: block;
@@ -172,13 +173,13 @@ nav .link {
     transition: color 250ms var(--time-function);
 }
 
-nav .link:hover,
-nav .link:focus {
+.main-nav__link:hover,
+.main-nav__link:focus {
     color: var(--accent-color);
 }
 
-nav .link::after,
-nav .link::after {
+.main-nav__link::after,
+.main-nav__link::after {
     position: absolute;
 
     content: '';
@@ -195,44 +196,43 @@ nav .link::after {
     width 250ms var(--time-function);
 }
 
-nav .link:hover::after,
-nav .link:focus::after {
+.main-nav__link:hover::after,
+.main-nav__link:focus::after {
     transform: scaleX(1);
 }
 
 /* Contacts */
-.contact-list {
+.header-contact {
     display: flex;
     margin-left: auto;
 }
 
-.contact-list .link {
+.header-contact__link {
     padding-top: 32px;
     padding-bottom: 32px; 
-}
 
-.contact-list li:not(:last-child) {
-    margin-right: 50px;
-}
-
-.contact {
     display: flex;
     align-items: center;
     color: var(--primary-text-color);
-
+    
     transition: color 250ms var(--time-function);
 }
 
-.contact-icon {
-    display: block;
+.header-contact__link:hover,
+.header-contact__link:focus {
+    color: var(--accent-color);
+}
+
+.header-contact__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+
+.header-contact__icon {
     margin-right: 10px;
     fill: currentColor;
 }
 
-.contact:hover,
-.contact:focus {
-    color: var(--accent-color);
-}
 
 /* MAIN */
 /* Order a service */
