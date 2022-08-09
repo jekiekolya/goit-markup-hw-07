@@ -673,6 +673,7 @@ p {
 
 .client-icon {
   width: 106px;
+  height: 60px;
   fill: currentColor;
 }
 
@@ -707,6 +708,7 @@ address .contact {
 
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .address-section {
@@ -758,6 +760,11 @@ address .contact {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   outline: none;
+  transition: border-color 250ms var(--time-function);
+}
+
+.mail-subscribe:focus-within {
+  border-color: var(--primary-white-color);
 }
 
 .mail-subscribe::placeholder {
@@ -833,13 +840,15 @@ address .contact {
   margin: 15px;
 
   background: var(--primary-white-color);
-  border: 1px solid #eeeeee;
+}
 
+.card-link {
+  display: block;
   transition: box-shadow 250ms var(--time-function);
 }
 
-.card-item:hover,
-.card-item:focus {
+.card-link:hover,
+.card-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -851,7 +860,6 @@ address .contact {
 
 .card-img {
   display: block;
-  margin: -1px 0 0 -1px;
 }
 
 .card-overlay {
@@ -884,6 +892,10 @@ address .contact {
 
 .card-info {
   padding: 20px 24px;
+
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .card-title {
@@ -899,4 +911,6 @@ address .contact {
 
   font-size: 16px;
   line-height: 1.88;
+
+  color: var(--primary-text-color);
 }
