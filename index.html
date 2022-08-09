@@ -61,78 +61,83 @@
 
     <main>
       <!-- Order a service -->
-      <section class="order section">
+      <section class="section section-order">
         <div class="container">
-          <h1 class="order-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="primary-button" data-modal-open>Замовити послугу</button>
+          <h1 class="section-order__title">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="button button--active" data-modal-open
+            >Замовити послугу</button
+          >
         </div>
 
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-            <button type="button" class="modal-btn" data-modal-close>
-              <svg class="cross-icon" width="11" height="11">
+        <!-- Modal window for order-->
+        <div class="modal__backdrop is-hidden" data-modal>
+          <div class="modal__window">
+            <button type="button" class="modal__btn" data-modal-close>
+              <svg class="modal__icon" width="11" height="11">
                 <use href="./images/icons/icons.svg#icon-cross"></use>
               </svg>
             </button>
 
             <!-- Modal form -->
-            <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
-            <form class="order-info" name="order-info" autocomplete="on">
-              <label class="form-field">
-                <span class="form-label">Ім'я</span>
-                <div class="input-field">
-                  <input class="form-input" type="text" name="name" placeholder=" " />
-                  <svg class="form-icon">
+            <h2 class="order-form__title">Залиште свої дані, ми вам передзвонимо</h2>
+            <form class="order-form" name="order-info" autocomplete="on">
+              <label class="order-form__label">
+                <span class="order-form__name">Ім'я</span>
+                <div class="order-form__field">
+                  <input class="order-form__input" type="text" name="name" placeholder=" " />
+                  <svg class="order-form__icon">
                     <use href="./images/icons/icons.svg#icon-person"></use>
                   </svg>
                 </div>
               </label>
 
-              <label class="form-field">
-                <span class="form-label">Телефон</span>
-                <div class="input-field">
-                  <input class="form-input" type="tel" name="phone-number" placeholder=" " />
-                  <svg class="form-icon">
+              <label class="order-form__label">
+                <span class="order-form__name">Телефон</span>
+                <div class="order-form__field">
+                  <input class="order-form__input" type="tel" name="phone-number" placeholder=" " />
+                  <svg class="order-form__icon">
                     <use href="./images/icons/icons.svg#icon-phone"></use>
                   </svg>
                 </div>
               </label>
 
-              <label class="form-field">
-                <span class="form-label">Пошта</span>
-                <div class="input-field">
-                  <input class="form-input" type="email" name="user-email" placeholder=" " />
-                  <svg class="form-icon">
+              <label class="order-form__label">
+                <span class="order-form__name">Пошта</span>
+                <div class="order-form__field">
+                  <input class="order-form__input" type="email" name="user-email" placeholder=" " />
+                  <svg class="order-form__icon">
                     <use href="./images/icons/icons.svg#icon-email"></use>
                   </svg>
                 </div>
               </label>
 
-              <label class="form-field">
-                <span class="form-label">Коментар</span>
+              <label class="order-form__label">
+                <span class="order-form__name">Коментар</span>
                 <textarea
-                  class="form-comment form-input"
+                  class="order-form__comment order-form__input"
                   name="comment"
                   rows="5"
                   placeholder="Введіть текст"
                 ></textarea>
               </label>
 
-              <label class="form-field checkbox-field">
-                <input class="checkbox" type="checkbox" name="confirm" />
-                <svg class="icon-check-empty" width="15px" height="15px">
+              <label class="order-form__label checkbox">
+                <input class="checkbox__input" type="checkbox" name="confirm" />
+                <svg class="checkbox__icon-empty" width="15px" height="15px">
                   <use href="./images/icons/icons.svg#icon-check-empty"></use>
                 </svg>
-                <svg class="icon-check" width="15px" height="15px">
+                <svg class="checkbox__icon-check" width="15px" height="15px">
                   <use href="./images/icons/icons.svg#icon-check"></use>
                 </svg>
-                <span class="checkbox-label"
-                  >Погоджуюся з розсилкою та приймаю
-                  <a href="" class="link" target="_blank">Умови договору</a>
+                <span class="checkbox__name">
+                  Погоджуюся з розсилкою та приймаю
+                  <a href="" class="link checkbox__link" target="_blank">Умови договору</a>
                 </span>
               </label>
 
-              <button class="primary-button form-btn" type="submit">Відправити</button>
+              <button class="button button--active order-form__btn" type="submit"
+                >Відправити</button
+              >
             </form>
           </div>
         </div>
@@ -668,7 +673,7 @@
             <h3 class="footer-title">Підпишіться на розсилку</h3>
             <div class="form-subscribe">
               <input class="mail-subscribe" type="email" name="email" placeholder="E-mail" />
-              <button class="primary-button button-subscribe" type="submit">
+              <button class="button button--active button-subscribe" type="submit">
                 <span>Підписатися</span>
                 <svg width="24px" height="24px">
                   <use href="./images/icons/icons.svg#icon-send"></use>
