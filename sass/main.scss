@@ -1,0 +1,137 @@
+/*        TEXT COLOR
+  |============================
+   main color for text: #757575; 
+   main color for text in header: #212121; 
+   secondary color for text: #FFFFFF; 
+   color accent: #2196F3 
+   Color for logo: #000000 
+  |============================
+*/
+
+/*     BACKGROUND COLOR
+  |============================
+   main background color: #FFFFFF;
+   secondary background color: #2F303A; 
+   another background color: #F5F4FA
+  |============================
+*/
+
+/*        ELEMENTS
+  |============================
+   Color for icons: #AFB1B8;
+   Time function for animation: cubic-bezier(0.4, 0, 0.2, 1);
+  |============================
+*/
+
+// VARIABLES
+// TEXT
+$primary-text-color: #757575;
+$title-text-color: #212121;
+
+// ACCENT
+$accent-color: #2196f3;
+
+// POPULAR COLOR
+$primary-white-color: #ffffff;
+$secondary-white-color: #f5f4fa;
+$secondary-background-color: #2f303a;
+
+// ELEMENTS
+$primary-icon-color: #afb1b8;
+$time-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+// RESET
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+img {
+  display: block;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+// COMMON SETTINGS
+body {
+  background-color: $primary-white-color;
+  color: $primary-text-color;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  padding: 0 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+// HEADER
+
+.main-nav__link--current {
+  color: $accent-color;
+}
+
+.main-nav__link--current::after {
+  position: absolute;
+
+  content: '';
+  width: 100%;
+  height: 4px;
+  transform: scaleX(1);
+
+  left: 0px;
+  bottom: -1px;
+  border-radius: 2px;
+  background-color: $accent-color;
+}

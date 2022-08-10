@@ -55,11 +55,11 @@ html {
   color: currentColor;
 }
 
-.link.current {
+.main-nav__link--current {
   color: var(--accent-color);
 }
 
-.link.current::after {
+.main-nav__link--current::after {
   position: absolute;
 
   content: '';
