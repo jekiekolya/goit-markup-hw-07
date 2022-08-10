@@ -382,18 +382,25 @@
 
         <!-- Subscribe to the newsletter  -->
         <div class="footer__section-subscribe">
-          <label>
-            <h3 class="footer__title">Підпишіться на розсилку</h3>
-            <div class="form-subscribe">
-              <input class="form-subscribe__input" type="email" name="email" placeholder="E-mail" />
-              <button class="button button--active form-subscribe__btn" type="submit">
-                <span class="form-subscribe__btn-name">Підписатися</span>
-                <svg width="24px" height="24px">
-                  <use href="./images/icons/icons.svg#icon-send"></use>
-                </svg>
-              </button>
-            </div>
-          </label>
+          <form class="form-subscribe" name="form-subscribe" autocomplete="on">
+            <label>
+              <h3 class="footer__title">Підпишіться на розсилку</h3>
+              <div class="form-subscribe__field">
+                <input
+                  class="form-subscribe__input"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                />
+                <button class="button button--active form-subscribe__btn" type="submit">
+                  <span class="form-subscribe__btn-name">Підписатися</span>
+                  <svg width="24px" height="24px">
+                    <use href="./images/icons/icons.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </div>
+            </label>
+          </form>
         </div>
       </div>
     </footer>
