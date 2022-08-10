@@ -126,12 +126,12 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.container--center {
+.main-nav {
   display: flex;
   align-items: center;
 }
 
-.main-nav {
+.container--center {
   display: flex;
   align-items: center;
 }

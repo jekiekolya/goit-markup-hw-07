@@ -1,27 +1,26 @@
-/*        TEXT COLOR
-  |============================
-   main color for text: #757575; 
-   main color for text in header: #212121; 
-   secondary color for text: #FFFFFF; 
-   color accent: #2196F3 
-   Color for logo: #000000 
-  |============================
-*/
+//             TEXT COLOR
+//   |============================
+//    main color for text: #757575;
+//    main color for text in header: #212121;
+//    secondary color for text: #FFFFFF;
+//    color accent: #2196F3
+//    Color for logo: #000000
+//   |============================
 
-/*     BACKGROUND COLOR
-  |============================
-   main background color: #FFFFFF;
-   secondary background color: #2F303A; 
-   another background color: #F5F4FA
-  |============================
-*/
+//           BACKGROUND COLOR
+//   |============================
+//    main background color: #FFFFFF;
+//    secondary background color: #2F303A;
+//    another background color: #F5F4FA
+//   |============================
+//
 
-/*        ELEMENTS
-  |============================
-   Color for icons: #AFB1B8;
-   Time function for animation: cubic-bezier(0.4, 0, 0.2, 1);
-  |============================
-*/
+//              ELEMENTS
+//   |============================
+//    Color for icons: #AFB1B8;
+//    Time function for animation: cubic-bezier(0.4, 0, 0.2, 1);
+//   |============================
+//
 
 // VARIABLES
 // TEXT
@@ -109,6 +108,11 @@ button {
   margin: 0 auto;
   width: 1200px;
   padding: 0 15px;
+
+  &--center {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .section {
@@ -117,21 +121,45 @@ button {
 }
 
 // HEADER
+.page-header {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid #ececec;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+// logo
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  &__accent {
+    color: $accent-color;
+  }
+}
 
 .main-nav__link--current {
   color: $accent-color;
-}
 
-.main-nav__link--current::after {
-  position: absolute;
+  &::after {
+    position: absolute;
 
-  content: '';
-  width: 100%;
-  height: 4px;
-  transform: scaleX(1);
+    content: '';
+    width: 100%;
+    height: 4px;
+    transform: scaleX(1);
 
-  left: 0px;
-  bottom: -1px;
-  border-radius: 2px;
-  background-color: $accent-color;
+    left: 0px;
+    bottom: -1px;
+    border-radius: 2px;
+    background-color: $accent-color;
+  }
 }
