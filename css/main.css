@@ -89,22 +89,6 @@ button {
   align-items: center;
 }
 
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-}
-.logo__accent {
-  color: #2196f3;
-}
-
-.main-nav__logo {
-  margin-right: 93px;
-  color: #000000;
-}
-
 .main-nav__list {
   display: flex;
 }
@@ -181,6 +165,27 @@ button {
 .header-contact__icon {
   margin-right: 10px;
   fill: currentColor;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.logo__accent {
+  color: #2196f3;
+}
+
+.page-header__logo {
+  margin-right: 93px;
+  color: #000000;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .order {
@@ -735,11 +740,6 @@ button {
   width: 231px;
   margin-right: 70px;
   color: #ffffff;
-}
-
-.footer__logo {
-  display: inline-block;
-  margin-bottom: 20px;
 }
 
 .address {
