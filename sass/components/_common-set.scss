@@ -28,11 +28,11 @@ button {
   margin: 0 auto;
   width: 1200px;
   padding: 0 15px;
+}
 
-  &--center {
-    display: flex;
-    align-items: center;
-  }
+.container--center {
+  display: flex;
+  align-items: center;
 }
 
 .section {
