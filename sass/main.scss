@@ -22,144 +22,32 @@
 //   |============================
 //
 
-// VARIABLES
-// TEXT
-$primary-text-color: #757575;
-$title-text-color: #212121;
+// Main components
+@import './utils/variables';
+@import './utils/reset';
+@import './components/common-set';
 
-// ACCENT
-$accent-color: #2196f3;
+// Page HEADER
+@import './components/page-header';
 
-// POPULAR COLOR
-$primary-white-color: #ffffff;
-$secondary-white-color: #f5f4fa;
-$secondary-background-color: #2f303a;
+// Page - WebStudio
+// Section - Order
+@import './components/page-webstudio/section-order';
+@import './components/page-webstudio/modal-window';
+// Section - Advantages
+@import './components/page-webstudio/section-adventage';
+// Section - Work
+@import './components/page-webstudio/section-work';
+// Section - Team
+@import './components/page-webstudio/section-team';
+// Section - Client
+@import './components/page-webstudio/section-client';
 
-// ELEMENTS
-$primary-icon-color: #afb1b8;
-$time-function: cubic-bezier(0.4, 0, 0.2, 1);
+// Page - Portfolio
+// Section - Button
+@import './components/page-portfolio/section-button';
+// Section - Card
+@import './components/page-portfolio/section-card';
 
-// RESET
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0px;
-}
-
-p {
-  margin: 0px;
-}
-
-img {
-  display: block;
-}
-
-.link {
-  text-decoration: none;
-  color: currentColor;
-}
-
-// COMMON SETTINGS
-body {
-  background-color: $primary-white-color;
-  color: $primary-text-color;
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 0.03em;
-  font-size: 14px;
-}
-
-button {
-  cursor: pointer;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.container {
-  margin: 0 auto;
-  width: 1200px;
-  padding: 0 15px;
-
-  &--center {
-    display: flex;
-    align-items: center;
-  }
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-// HEADER
-.page-header {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  border-bottom: 1px solid #ececec;
-}
-
-.main-nav {
-  display: flex;
-  align-items: center;
-}
-
-// logo
-.logo {
-  font-family: 'Raleway', sans-serif;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-
-  &__accent {
-    color: $accent-color;
-  }
-}
-
-.main-nav__link--current {
-  color: $accent-color;
-
-  &::after {
-    position: absolute;
-
-    content: '';
-    width: 100%;
-    height: 4px;
-    transform: scaleX(1);
-
-    left: 0px;
-    bottom: -1px;
-    border-radius: 2px;
-    background-color: $accent-color;
-  }
-}
+// Page FOOTER
+@import './components/page-footer';
