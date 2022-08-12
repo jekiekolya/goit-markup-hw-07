@@ -295,6 +295,7 @@ button {
 }
 
 .order-form__label {
+  position: relative;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -309,10 +310,6 @@ button {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: #757575;
-}
-
-.order-form__field {
-  position: relative;
 }
 
 .order-form__input {
@@ -339,7 +336,7 @@ button {
 
 .order-form__icon {
   position: absolute;
-  top: 11px;
+  bottom: 11px;
   left: 12px;
   width: 18px;
   height: 18px;
