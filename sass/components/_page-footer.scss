@@ -25,6 +25,11 @@
 
 .address__contact {
   opacity: 0.6;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .address__item:not(:last-child) {

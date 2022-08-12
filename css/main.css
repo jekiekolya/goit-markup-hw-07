@@ -235,7 +235,7 @@ button {
 }
 
 /* modal window */
-.backdrop {
+.modal__backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -750,6 +750,9 @@ button {
 
 .address__contact {
   opacity: 0.6;
+}
+.address__contact:hover, .address__contact:focus {
+  color: #2196f3;
 }
 
 .address__item:not(:last-child) {
